@@ -26,3 +26,4 @@ This is the future we imagine
 Here's how it works in Parker's words
 
 We basically used GPT to handle all the backend logic for a todo-list app. We represented the state of the app as a json with some prepopulated entries which helped define the schema. Then we pass the prompt, the current state, and some user-inputted instruction/API call in and extract a response to the client + the new state. So the idea is that instead of writing backend routes, the LLM can handle all the basic CRUD logic for a simple app so instead of writing specific routes, you can input commands like add_five_housework_todos() or delete_last_two_todos() or sort_todos_alphabetically() . It tends to work better when the commands are expressed as functions/pseudo function calls but natural language instructions like delete last todos also work.
+still don't yes？
